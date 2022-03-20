@@ -1,8 +1,8 @@
-#include<stdio.h>
+#include <stdio.h>
 int input_side()
 {
   int n;
-  printf("enter the length sides of triangle\n");
+  printf ("enter the length sides of triangle\n");
   scanf("%d",&n);
   return n;
 }
