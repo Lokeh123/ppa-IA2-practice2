@@ -3,12 +3,12 @@
 int input()
 {
   int num;
-  printf("Enter a number:\n");
-  scanf("%d", &num);
+  printf ("Enter a number:\n");
+  scanf ("%d", &num);
   return num;
 }
 
-int gcd(int a, int b)
+int gcd (int a, int b)
 {
   int i,small,gcd;
   if ( a > b)

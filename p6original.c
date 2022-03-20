@@ -1,13 +1,13 @@
-#include<stdio.h>
-#include<string.h>
+#include <stdio.h>
+#include <string.h>
 
 void input(char *a)
 {
-  printf("Enter the string:");
+  printf ("Enter the string:");
   scanf("%s",a);
 }
 
-int str_reverse(char *a,char *b)
+int str_reverse (char *a,char *b)
 {
   int n,j;
   n=strlen(a);

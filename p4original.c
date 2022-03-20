@@ -2,13 +2,13 @@
 int input_array_size()
 {
   int n;
-  printf("enter the array size");
+  printf ("enter the array size");
   scanf("%d",&n);
   return n;
 }
 void input_array(int n,int a[n])
 {
-  printf("enter the elements of the array:\n");
+  printf  ("enter the elements of the array:\n");
   for (int i=0;i<n;i++)
   {
     scanf("%d",&a[i]);
