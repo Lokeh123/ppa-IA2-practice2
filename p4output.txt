@@ -1,1 +1,36 @@
-
+Breakpoint 1, main () at p4original.c:46
+46  {
+(gdb) n
+48    n=input_array_size();
+(gdb) s
+input_array_size () at p4original.c:3
+3   {
+(gdb) n
+5     printf ("enter the array size");
+(gdb) 2
+Undefined command: "2".  Try "help".
+(gdb) n
+6     scanf("%d",&n);
+(gdb) n
+enter the array size 2
+7     return n;
+(gdb) n
+8   }
+(gdb) n
+main () at p4original.c:49
+49    int a[n];
+(gdb) s
+50    input_array(n,a);
+(gdb) n
+enter the elements of the array:
+13
+15
+51    sum=sum_composite_numbers(n,a);
+(gdb) n
+52    output(sum);
+(gdb) n
+53    return 0;
+(gdb) n
+54  }(gdb) Quit
+(gdb) Quit
+(gdb) 

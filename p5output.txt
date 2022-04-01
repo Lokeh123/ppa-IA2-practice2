@@ -1,1 +1,52 @@
-
+reakpoint 1, main () at p5original.c:38
+38    int num1 = input();
+(gdb) s
+input () at p5original.c:4
+4   {
+(gdb) n
+6     printf ("Enter a number:\n");
+(gdb) n
+Enter a number:
+7     scanf ("%d", &num);
+(gdb) n
+n
+8     return num;
+(gdb) n
+9   }
+(gdb) n
+main () at p5original.c:39
+39    int num2 = input();
+(gdb) s
+input () at p5original.c:4
+4   {
+(gdb) n
+6     printf ("Enter a number:\n");
+(gdb) 5
+Undefined command: "5".  Try "help".
+(gdb) n
+Enter a number:
+7     scanf ("%d", &num);
+(gdb) n
+8     return num;
+(gdb) n
+9   }
+(gdb) n
+main () at p5original.c:40
+40    int res = gcd(num1, num2);
+(gdb) s
+gcd (a=32618, b=32618) at p5original.c:14
+14    if ( a > b)
+(gdb) n
+20    if( b%a==0)
+(gdb) n
+21      return a;
+(gdb) n
+30  }
+(gdb) n
+main () at p5original.c:41
+41    output(num1, num2, res);
+(gdb) n
+The gcd of 32618 and 32618 is 32618
+42    return 0;
+(gdb) n
+43  }(gdb) 
